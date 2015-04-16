@@ -28,9 +28,9 @@ public class WatchView extends View {
 
     private static final double ROUND = 2d * Math.PI;
 
-    private final Calendar calendar;
+    private final Calendar calendar = new GregorianCalendar();
 
-    private final Paint paintSecond;
+    private final Paint paintSecond = new Paint();
 
     public WatchView(Context context) {
         this(context, null);
@@ -45,10 +45,6 @@ public class WatchView extends View {
 
         float density = getResources().getDisplayMetrics().density;
 
-        calendar = new GregorianCalendar();
-        calendar.setTimeInMillis(System.currentTimeMillis());
-
-        paintSecond = new Paint();
         paintSecond.setAntiAlias(true);
         paintSecond.setColor(Color.RED);
         paintSecond.setStyle(Paint.Style.STROKE);
@@ -60,13 +56,19 @@ public class WatchView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        // 圆心的 x, y 坐标
         int x = canvas.getWidth() / 2;
         int y = canvas.getHeight() / 2;
 
+        // 半径
         int radius = Math.min(x, y);
 
+        // 为了让秒针连续转动，所以秒针的角度肯定不是从「秒」这个整数里来
+        // 刚好秒针走一圈是 1 分钟，那么，就用分乘以「一圈（2π）」就是秒针要走的弧度数了
         float minute = ((float) calendar.get(Calendar.SECOND) + (float) calendar.get(Calendar.MILLISECOND) / 1000f) / 60f;
-        double secondRadians = (minute - 1 / 4) * ROUND;
+
+        // 三角函数的坐标轴是以 3 点方向为 0 的，所以记得要减去四分之一个圆周哦
+        double secondRadians = (minute - QUARTER) * ROUND;
 
         canvas.drawLine(x, y,
                 x + (float) Math.cos(secondRadians) * radius,
@@ -79,18 +81,11 @@ public class WatchView extends View {
 
 这里用到了两个东西：[`Paint`](http://developer.android.com/reference/android/graphics/Paint.html) 和 [`Canvas`](http://developer.android.com/reference/android/graphics/Canvas.html)，查文档吧，这里不重复了。
 
-看上面的源码，有几个地方要注意一下：
-
-- 为了让秒针连续转动，所以秒针的角度肯定不是从「秒」这个整数里来——刚好秒针走一圈是 1 分钟——那么，就用分乘以「一圈（`2π`）」就是秒针要走的弧度数了
-- 三角函数的坐标轴是以 3 点方向为 0 的，所以记得要减去四分之一个圆周哦
-
-编译，运行。咦，不懂？没错，我们还没做动画呢。
+编译，运行。咦，不动？没错，我们还没做动画呢。
 
 ## 让它动起来
 
-动起来，本质上就是定时重绘这个视图。
-
-如何定时呢？用 `Handler` 就好了。
+动起来，本质上就是定时重绘这个视图。如何定时呢？用 `Handler` 就好了。
 
 ```java
 public class WatchView extends View implements Runnable {
@@ -115,7 +110,7 @@ public class WatchView extends View implements Runnable {
     public void run() {
         calendar.setTimeInMillis(System.currentTimeMillis());
         invalidate();
-        handler.postDelayed(this, 1000 / 60);
+        handler.postDelayed(this, 20);
     }
 
     /* ... */
@@ -123,4 +118,4 @@ public class WatchView extends View implements Runnable {
 }
 ```
 
-好了，图书馆要关门了，走。
+好了，图书馆要关门了，走。完整源代码见：[xingrz/WatchView](https://github.com/xingrz/WatchView)。
