@@ -6,15 +6,19 @@ group: navigation
 
 ## 联系我
 
-- **Weibo: [@SINGYUCHAN](http://weibo.com/xingrz)** 没什么好看的
+- **Weibo: [@XiNGRZ](http://weibo.com/xingrz)** 没什么好看的
 - **GitHub: [@xingrz](https://github.com/xingrz)**
-- **E-mail: [chenxingyu92@gmail.com](mailto:chenxingyu92@gmail.com)**
+- **E-mail: [hi@xingrz.me](mailto:hi@xingrz.me)**
 
 ## 友情链接
 
 - **[iMID](http://imid.me/)** - Android 大神碎星的博客
 - **[天涯望帆](http://mjason.github.io/)** - 语言狂人、伟大的、邪恶的、认为一切问题都是语言问题的工头 MJ
 - **[Randy's Blog](http://djyde.github.io/)** - 同校的 Randy 师弟
+- **[杨辉](http://yanghui.name)** - Android 大大神
+- **[drakeet](http://drakeet.me)** - Android 大神
+- **[某烧饼](http://feng.moe)** - Android 大神
+- **[干货集中营](http://gank.io)** - 你懂的
 
 ## 其它有用的资源
 
