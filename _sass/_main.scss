@@ -40,8 +40,6 @@ sub, sup {
   left: 50px;
   top: 0;
   width: 250px;
-  background: #FFF;
-  border-bottom: 5px solid #EEE;
 }
 
 .site-header a {
@@ -50,19 +48,13 @@ sub, sup {
 
 .site-header .brand {
   font-size: 1.8rem;
-  background: $primary-color;
 }
 
 .site-header .brand > a {
   display: block;
-  text-align: center;
+  padding: 0 40px;
   line-height: 100px;
-  color: #FFF;
-  transition: background 500ms;
-}
-
-.site-header .brand > a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  transition: color 500ms;
 }
 
 .site-header nav ul {
@@ -78,7 +70,7 @@ sub, sup {
 
 .site-header nav ul > li > a {
   display: block;
-  padding: 0 3em;
+  padding: 0 40px;
   line-height: 7ex;
   color: #777;
   transition: background-color 500ms;
@@ -108,7 +100,7 @@ sub, sup {
 }
 
 .site-header nav ul > li > ul > li > a {
-  padding-left: 5em;
+  padding-left: 60px;
   font-size: 0.9em;
 }
 
@@ -124,6 +116,8 @@ sub, sup {
     right: 0;
     width: auto;
     white-space: nowrap;
+    background: #FFF;
+    border-bottom: 5px solid #EEE;
   }
 
   .site-header .brand {
@@ -134,6 +128,8 @@ sub, sup {
   }
 
   .site-header .brand > a {
+    padding: 0;
+    text-align: center;
     line-height: 50px;
   }
 
@@ -209,6 +205,7 @@ sub, sup {
   .site-header .brand {
     overflow: hidden;
     width: 55px;
+    background: $primary-color;
   }
 
   .site-header .brand > a {
@@ -234,7 +231,7 @@ sub, sup {
  */
 
 .site-abstract {
-  margin: 30px 0;
+  margin: 70px 0;
 }
 
 .site-abstract > header {
@@ -244,7 +241,7 @@ sub, sup {
 .site-abstract > header h1 {
   margin: 0;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .site-abstract > header h1 a {
