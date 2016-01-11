@@ -18,6 +18,7 @@ group: navigation
 - [杨辉](http://yanghui.name) - Android 大大神
 - [drakeet](http://drakeet.me) - Android 大神
 - [某烧饼](http://feng.moe) - Android 大神
+- [PeterCxy](https://typeblog.net) - Android 大神
 - [干货集中营](http://gank.io) - 你懂的
 
 ## 个人项目
