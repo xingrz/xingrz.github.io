@@ -5,7 +5,7 @@ tags: []
 title: 好久不见
 ---
 
-![](http://ww1.sinaimg.cn/large/4b263fe4jw1ex7p9plp1rj20u00u0775.jpg)
+![](https://www.sinaimg.cn/large/4b263fe4jw1ex7p9plp1rj20u00u0775.jpg)
 
 鉴于博主<del style="opacity:0.25">已经向着文艺青年方向发展</del>最近忙的要死，最近都只顾着发 Instagram 了。
 

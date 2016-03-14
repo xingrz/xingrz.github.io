@@ -5,7 +5,7 @@ tags: []
 title: 小修了一下博客的主题
 ---
 
-![](http://ww2.sinaimg.cn/large/4b263fe4jw1exd9etlmeuj20u00u042p.jpg)
+![](https://www.sinaimg.cn/large/4b263fe4jw1exd9etlmeuj20u00u042p.jpg)
 
 顺便发个图。
 
