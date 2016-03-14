@@ -3,7 +3,6 @@ permalink: /:year/:year-:month-:day/:title.html
 
 exclude: [ ".gitignore", "README.md", "CNAME" ]
 
-markdown: redcarpet
 highlighter: rouge
 
 sass:
