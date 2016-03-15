@@ -5,7 +5,7 @@ tags: []
 title: Hello Let's Encrypt
 ---
 
-这一波安利我必须要发！么么哒！
+这一波安利我必须要发！！！么么哒！
 
 刚准备睡觉时，收到 [Kloudsec](https://kloudsec.com/) CEO Steven Goh 发来的一封邮件邀请我试用它们的 [GitHub Pages CDN 服务](https://kloudsec.com/github-pages)，能够让绑定了自定义域名的 GitHub Pages 也能用上 HTTPS。花了十分钟简单配置一下就完成了！
 
