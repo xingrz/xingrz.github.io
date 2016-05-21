@@ -11,7 +11,7 @@ tags: [Android, CyanogenMod]
 
 最近入了 CM 这个坑 —— 给手上这台原本是 Android 4.2 的 Nubia Z5S (`nx503a`) 弄个 CM13。完全小白地折腾了两个星期，算是搞明白了一点，随手写点笔记。
 
-> 话说[上次](https://xingrz.me/2014/2014-10-04/compile-aosp-with-vagrant-on-osx.html)折腾 ROM 的时候 CM 才到 11…那次最后是不了了之了
+> 话说[上次](/2014/2014-10-04/compile-aosp-with-vagrant-on-osx.html)折腾 ROM 的时候 CM 才到 11…那次最后是不了了之了
 
 以 `nx503a` 为例，要给一台设备编译出一个 CM，至少需要这三套源码：
 
